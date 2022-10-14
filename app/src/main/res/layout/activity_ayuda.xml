@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ayuda"
+    android:background="#E2F4FA">
+    <ImageView
+        android:backgroundTint="@color/transparente"
+        android:background="@color/transparente"
+        android:id="@+id/btnatrasflecha"
+        android:layout_width="51dp"
+        android:layout_height="77dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/flechaatras" />
+
+
+    <ImageView
+        android:backgroundTint="@color/transparente"
+        android:background="@color/transparente"
+        android:id="@+id/imageView"
+        android:layout_width="268dp"
+        android:layout_height="259dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.601"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.033"
+        app:srcCompat="@drawable/logoazul" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:backgroundTint="@color/transparente"
+        android:background="@color/transparente"
+        android:id="@+id/texContraseñaAntigua"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="297dp"
+        android:layout_height="79dp"
+        android:hint="Ingresa tu contraseña Antigua"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="30"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/idTxtconAn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:maxLength="30"
+            app:errorEnabled="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:backgroundTint="@color/transparente"
+        android:background="@color/transparente"
+        android:id="@+id/texContraseñaNueva"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="297dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="24dp"
+        android:hint="Crea Tu nueva Contraseña"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="30"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.586"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/texContraseñaAntigua">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+
+
+            android:id="@+id/idTxtconnu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:maxLength="30"
+            app:errorEnabled="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <ImageView
+        android:id="@+id/imagen3"
+        android:backgroundTint="@color/transparente"
+        android:background="@color/transparente"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/texContraseñaAntigua"
+        app:layout_constraintEnd_toStartOf="@+id/texContraseñaAntigua"
+        app:layout_constraintTop_toTopOf="@+id/texContraseñaAntigua"
+        app:layout_constraintVertical_bias="0.482"
+        app:srcCompat="@drawable/cerrado" />
+
+    <ImageView
+        android:backgroundTint="@color/transparente"
+        android:background="@color/transparente"
+        android:id="@+id/imagen1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/texContraseñaNueva"
+        app:layout_constraintEnd_toStartOf="@+id/texContraseñaNueva"
+        app:layout_constraintTop_toTopOf="@+id/texContraseñaNueva"
+        app:layout_constraintVertical_bias="0.482"
+        app:srcCompat="@drawable/candadito" />
+
+    <ImageView
+        android:backgroundTint="@color/transparente"
+        android:background="@color/transparente"
+        android:id="@+id/imagen4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textRepetirContraseña"
+        app:layout_constraintEnd_toStartOf="@+id/textRepetirContraseña"
+        app:layout_constraintTop_toTopOf="@+id/textRepetirContraseña"
+        app:layout_constraintVertical_bias="0.647"
+        app:srcCompat="@drawable/candadocargando" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:backgroundTint="@color/transparente"
+        android:background="@color/transparente"
+        android:id="@+id/textRepetirContraseña"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="128dp"
+        android:hint="Confirma Tu nueva Contraseña"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:endIconMode="password_toggle"
+
+        app:layout_constraintEnd_toEndOf="@+id/texContraseñaAntigua"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/texContraseñaAntigua"
+        app:layout_constraintTop_toBottomOf="@+id/texContraseñaAntigua">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/textconfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:maxLength="20" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:backgroundTint="@color/transparente"
+        android:background="@color/transparente"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="La contraseña debe contener al menos una letra mayuscula,una minuscula,un numero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textRepetirContraseña" />
+
+    <Button
+        android:id="@+id/btnCambiarContraseña"
+
+        android:layout_width="200dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/azuloscuro"
+        android:text="Cambiar contraseña"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="@+id/textRepetirContraseña"
+        app:layout_constraintStart_toStartOf="@+id/textRepetirContraseña"
+        app:layout_constraintTop_toBottomOf="@+id/textRepetirContraseña" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
